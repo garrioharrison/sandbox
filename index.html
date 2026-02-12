@@ -1,71 +1,442 @@
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Sandbox by garrioharrison</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Partner Sets</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="wrapper">
-      <header>
-        <h1>Sandbox</h1>
-        <p></p>
-
-        <p class="view"><a href="https://github.com/garrioharrison/sandbox">View the Project on GitHub <small>garrioharrison/sandbox</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/garrioharrison/sandbox/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/garrioharrison/sandbox/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/garrioharrison/sandbox">View On <strong>GitHub</strong></a></li>
-        </ul>
+    <div class="app">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">Partner Sets</p>
+          <h1>Train together. Alternate every set.</h1>
+          <p class="subtitle">A mobile-first workout tracker for two athletes sharing one rhythm.</p>
+        </div>
+        <div class="team-card">
+          <div>
+            <p class="label">Team</p>
+            <h2>Garrio + Audrey</h2>
+            <p class="muted">Default rest timer: <strong>90s</strong> · Goal: <strong>Hypertrophy</strong></p>
+          </div>
+          <button class="primary">Start Workout</button>
+        </div>
       </header>
-      <section>
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+      <main>
+        <section class="grid two">
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <h3>Onboarding</h3>
+                <p class="muted">Create a shared team and set training defaults.</p>
+              </div>
+              <span class="chip success">Step 1</span>
+            </div>
+            <div class="form-grid">
+              <label>
+                Team name
+                <input type="text" value="Partner Sets" aria-label="Team name">
+              </label>
+              <label>
+                Default rest timer
+                <select aria-label="Default rest timer">
+                  <option>60s</option>
+                  <option selected>90s</option>
+                  <option>120s</option>
+                </select>
+              </label>
+              <label>
+                Garrio
+                <div class="row">
+                  <input type="text" value="Garrio">
+                  <input type="number" value="186" placeholder="Bodyweight">
+                </div>
+              </label>
+              <label>
+                Audrey
+                <div class="row">
+                  <input type="text" value="Audrey">
+                  <input type="number" value="142" placeholder="Bodyweight">
+                </div>
+              </label>
+            </div>
+            <button class="ghost">Save onboarding</button>
+          </article>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <h3>Home / Dashboard</h3>
+                <p class="muted">Quick access to workouts and progress.</p>
+              </div>
+              <span class="chip">Today</span>
+            </div>
+            <div class="dashboard">
+              <button class="primary full">Start Workout</button>
+              <div class="list">
+                <div class="list-item">
+                  <div>
+                    <p class="title">Templates</p>
+                    <p class="muted">Full Body A · Upper Strength · Conditioning</p>
+                  </div>
+                  <span class="pill">3</span>
+                </div>
+                <div class="list-item">
+                  <div>
+                    <p class="title">Recent Sessions</p>
+                    <p class="muted">Full Body A · 46 min · Yesterday</p>
+                  </div>
+                  <span class="pill">5</span>
+                </div>
+                <div class="list-item">
+                  <div>
+                    <p class="title">Progress</p>
+                    <p class="muted">See trends per person and exercise</p>
+                  </div>
+                  <span class="pill">↗</span>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <h3>Templates</h3>
+              <p class="muted">Create reusable workouts with coaching cues and targets.</p>
+            </div>
+            <button class="ghost">New template</button>
+          </div>
+          <div class="template-grid">
+            <div class="template-card">
+              <h4>Full Body A</h4>
+              <p class="muted">Goal: Hypertrophy · 5 exercises</p>
+              <ul>
+                <li>Squat · 4 sets · 90s</li>
+                <li>Bench · 4 sets · 90s</li>
+                <li>Lat Pulldown · 3 sets · 75s</li>
+                <li>RDL · 3 sets · 90s</li>
+                <li>Plank · 3 sets · 60s</li>
+              </ul>
+              <button class="ghost">Edit template</button>
+            </div>
+            <div class="template-card">
+              <h4>Quick Start</h4>
+              <p class="muted">Start with a blank workout.</p>
+              <ul>
+                <li>Add exercises on the fly</li>
+                <li>Auto alternates turns</li>
+                <li>Offline set logging</li>
+              </ul>
+              <button class="ghost">Launch quick start</button>
+            </div>
+          </div>
+        </section>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+        <section class="panel live">
+          <div class="panel-header">
+            <div>
+              <h3>Live Workout</h3>
+              <p class="muted">Alternate turns, track sets, and rest on a shared timer.</p>
+            </div>
+            <div class="timer" role="timer">
+              <span class="muted">Rest timer</span>
+              <strong id="timerDisplay">01:30</strong>
+              <button class="ghost" id="timerToggle">Start</button>
+            </div>
+          </div>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+          <div class="live-grid">
+            <div class="exercise-card">
+              <div>
+                <p class="label">Current exercise</p>
+                <h4>Back Squat</h4>
+                <p class="muted">Cues: brace core · drive knees out · control the descent</p>
+              </div>
+              <div class="set-status">
+                <p class="label">Set counter</p>
+                <h2>Set 2 of 4</h2>
+                <div class="turn">Audrey's turn</div>
+              </div>
+            </div>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+            <div class="log-card">
+              <h4>Log Audrey's set</h4>
+              <div class="form-grid compact">
+                <label>
+                  Weight
+                  <input type="number" value="135">
+                </label>
+                <label>
+                  Reps
+                  <input type="number" value="8">
+                </label>
+                <label>
+                  RPE (optional)
+                  <input type="number" value="7" min="1" max="10">
+                </label>
+                <label>
+                  Notes
+                  <input type="text" value="Felt strong">
+                </label>
+              </div>
+              <div class="button-row">
+                <button class="primary">Complete Set</button>
+                <button class="ghost">Edit</button>
+                <button class="ghost">Skip</button>
+                <button class="ghost" id="swapTurn">Swap Turn</button>
+              </div>
+            </div>
+          </div>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+          <div class="history">
+            <h4>Last session context</h4>
+            <div class="history-grid">
+              <div>
+                <p class="label">Audrey</p>
+                <p>Top set: 135 × 8 · Best 1RM est: 171</p>
+              </div>
+              <div>
+                <p class="label">Garrio</p>
+                <p>Top set: 185 × 6 · Best 1RM est: 222</p>
+              </div>
+            </div>
+          </div>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+          <div class="control-row">
+            <button class="ghost">Add Set</button>
+            <button class="ghost">Remove Set</button>
+            <button class="ghost">Replace Exercise</button>
+            <button class="primary">Next Exercise</button>
+          </div>
+        </section>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+        <section class="panel summary">
+          <div class="panel-header">
+            <div>
+              <h3>Workout Summary</h3>
+              <p class="muted">Auto-detected PRs and next-time guidance.</p>
+            </div>
+            <button class="primary">Generate Share Card</button>
+          </div>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+          <div class="summary-grid">
+            <div class="summary-card">
+              <h4>Session Overview</h4>
+              <ul>
+                <li>Duration: 48 minutes</li>
+                <li>Exercises completed: 5</li>
+                <li>Total sets logged: 38</li>
+              </ul>
+              <div class="wins">
+                <h5>Wins</h5>
+                <ul>
+                  <li>Audrey PR: 135 × 8 (best 1RM)</li>
+                  <li>Garrio PR: 185 × 6 (heavier at same reps)</li>
+                  <li>Both hit top rep range on Bench</li>
+                </ul>
+              </div>
+            </div>
+            <div class="summary-card">
+              <h4>What to do next time</h4>
+              <div class="next-time">
+                <div>
+                  <p class="label">Audrey</p>
+                  <p>Increase squat to 140 if RPE stays ≤7. Add 15s rest if reps drop >30%.</p>
+                </div>
+                <div>
+                  <p class="label">Garrio</p>
+                  <p>Keep bench weight, aim for 7–8 reps, then bump 5 lb next week.</p>
+                </div>
+              </div>
+            </div>
+          </div>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/garrioharrison">garrioharrison</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>Exercise</th>
+                  <th>Audrey Sets</th>
+                  <th>Garrio Sets</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Back Squat</td>
+                  <td>135×8 · 135×8 · 130×7 · 125×6</td>
+                  <td>185×6 · 185×6 · 175×6 · 170×5</td>
+                </tr>
+                <tr>
+                  <td>Bench Press</td>
+                  <td>95×10 · 95×10 · 90×9</td>
+                  <td>135×8 · 135×8 · 130×7</td>
+                </tr>
+                <tr>
+                  <td>Lat Pulldown</td>
+                  <td>85×10 · 85×9 · 80×8</td>
+                  <td>120×8 · 115×8 · 110×7</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="panel share">
+          <div class="panel-header">
+            <div>
+              <h3>Share Card Preview</h3>
+              <p class="muted">Exportable recap for social or text sharing.</p>
+            </div>
+            <button class="ghost">Download image</button>
+          </div>
+          <div class="share-card">
+            <div>
+              <p class="label">Partner Sets · Full Body A</p>
+              <h4>Garrio + Audrey</h4>
+              <p class="muted">May 14 · 48 min · Hypertrophy</p>
+            </div>
+            <div class="share-grid">
+              <div>
+                <h5>Top 3 Highlights</h5>
+                <ol>
+                  <li>Audrey hit 135 × 8 on squat.</li>
+                  <li>Garrio matched 185 × 6 with clean depth.</li>
+                  <li>Both improved bench volume.</li>
+                </ol>
+              </div>
+              <div>
+                <h5>Exercise Summary</h5>
+                <ul>
+                  <li>Squat · 4 sets each</li>
+                  <li>Bench · 3 sets each</li>
+                  <li>Lat Pulldown · 3 sets each</li>
+                </ul>
+              </div>
+            </div>
+            <button class="primary full">Copy as text</button>
+          </div>
+        </section>
+
+        <section class="grid two">
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <h3>Progress</h3>
+                <p class="muted">Trends per person and exercise.</p>
+              </div>
+              <span class="chip">Filters</span>
+            </div>
+            <div class="chart-placeholder">
+              <p class="label">Back Squat · Estimated 1RM</p>
+              <div class="chart">
+                <span style="height: 40%"></span>
+                <span style="height: 55%"></span>
+                <span style="height: 65%"></span>
+                <span style="height: 75%"></span>
+              </div>
+              <div class="legend">
+                <span>Audrey</span>
+                <span>Garrio</span>
+              </div>
+            </div>
+            <div class="filter-row">
+              <button class="ghost">Person</button>
+              <button class="ghost">Exercise</button>
+              <button class="ghost">Date range</button>
+            </div>
+          </article>
+
+          <article class="panel">
+            <div class="panel-header">
+              <div>
+                <h3>Coaching & Advice</h3>
+                <p class="muted">Contextual tips based on today’s goal.</p>
+              </div>
+              <span class="chip warning">Hypertrophy</span>
+            </div>
+            <ul class="tips">
+              <li>If reps drop by more than 30%, add 15–30s rest or reduce weight next set.</li>
+              <li>All sets hit the top rep range with RPE ≤7? Increase weight next time.</li>
+              <li>For 6–10 reps, keep tempo controlled and avoid bouncing out of the bottom.</li>
+            </ul>
+            <details class="accordion">
+              <summary>Technique checklist · Back Squat</summary>
+              <ul>
+                <li>Brace core before unracking.</li>
+                <li>Keep chest tall and knees tracking toes.</li>
+                <li>Drive through mid-foot.</li>
+              </ul>
+            </details>
+          </article>
+        </section>
+
+        <section class="panel">
+          <div class="panel-header">
+            <div>
+              <h3>Data Model</h3>
+              <p class="muted">Relational tables for teams, templates, sessions, and sets.</p>
+            </div>
+            <span class="chip">Postgres</span>
+          </div>
+          <pre><code>teams(id, name)
+people(id, team_id, name, photo_url, bodyweight_optional)
+exercises(id, name, category, equipment, default_cues_json)
+templates(id, team_id, name, goal_default)
+template_exercises(id, template_id, exercise_id, order_index, default_sets, default_rest_seconds)
+sessions(id, team_id, template_id_nullable, title, goal, started_at, ended_at, duration_seconds)
+session_exercises(id, session_id, exercise_id, order_index, sets_planned)
+sets(id, session_exercise_id, person_id, set_number, weight, reps, rpe_nullable, notes_nullable, completed_at)</code></pre>
+        </section>
+      </main>
     </div>
-    <script src="javascripts/scale.fix.js"></script>
-    
+
+    <script>
+      const timerDisplay = document.getElementById('timerDisplay');
+      const timerToggle = document.getElementById('timerToggle');
+      const swapTurn = document.getElementById('swapTurn');
+      const turns = ['Audrey', 'Garrio'];
+      let currentTurn = 0;
+      let secondsLeft = 90;
+      let intervalId = null;
+
+      const updateTimer = () => {
+        const minutes = String(Math.floor(secondsLeft / 60)).padStart(2, '0');
+        const seconds = String(secondsLeft % 60).padStart(2, '0');
+        timerDisplay.textContent = `${minutes}:${seconds}`;
+      };
+
+      const tick = () => {
+        if (secondsLeft > 0) {
+          secondsLeft -= 1;
+          updateTimer();
+        }
+      };
+
+      timerToggle.addEventListener('click', () => {
+        if (intervalId) {
+          clearInterval(intervalId);
+          intervalId = null;
+          timerToggle.textContent = 'Start';
+          return;
+        }
+        intervalId = setInterval(tick, 1000);
+        timerToggle.textContent = 'Pause';
+      });
+
+      swapTurn.addEventListener('click', () => {
+        currentTurn = (currentTurn + 1) % turns.length;
+        document.querySelector('.turn').textContent = `${turns[currentTurn]}'s turn`;
+        document.querySelector('.log-card h4').textContent = `Log ${turns[currentTurn]}'s set`;
+      });
+
+      updateTimer();
+    </script>
   </body>
 </html>
